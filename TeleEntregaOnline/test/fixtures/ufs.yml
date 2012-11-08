@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id_estado: 
+  descricao: MyText
+  id_pais: 
+
+two:
+  id_estado: 
+  descricao: MyText
+  id_pais: 
