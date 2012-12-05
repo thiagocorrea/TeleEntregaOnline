@@ -4,7 +4,9 @@
   <title>TeleEntregaOnline</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>  
-  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_login.css">
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -45,8 +47,26 @@
 </footer>
 
 
-
-<%= yield %>
-
 </body>
+<%= yield
+<div id="layout_login">
+
+	<form action="application_controller.rb" method="GET">
+ 		<p><p><p>
+		Usuario: <input type="text" id="usuario" name="usuario" />
+		Senha: <input type="password" id="senha" name="senha" />
+                
+		<input type= "submit" value="Acessar" />
+	</form>
+
+	<form action="06-resultado.html" method="GET">
+ 		<p><p><p>
+		Ainda nao e cadastrado?                
+		<input type= "submit" value="Cadastre-se" />
+	</form>
+</div>
+
+%>
+
+
 </html>

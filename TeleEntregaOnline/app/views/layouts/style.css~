@@ -82,6 +82,17 @@ a {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEC8B', endColorstr='#EECBAD)');
 }
 
+#layout_login{
+    position: fixed;
+    top: 120px;
+    right: 350px;
+    background: goldenrod;
+    width: 550px;
+    height: 120px;
+    color: brown;
+    border: solid 5px brown ;
+  
+}
 
 footer {
     position:fixed;
