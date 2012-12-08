@@ -16,7 +16,8 @@ class LoginController < ApplicationController
 
     else
       #flash.now.alert "Usuario ou senha invalida!"
-      redirect_to root_url, :notice => "Usuario nao cadastrado!"
+      flash[":error"] = "sem acesso"
+      render new
     end
   end
 

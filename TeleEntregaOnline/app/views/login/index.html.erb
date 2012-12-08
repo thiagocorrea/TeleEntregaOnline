@@ -1,17 +1,14 @@
 <div id="layout_login">
 
-	<form action="//home/aluno/Projeto_TeleEntrega/TeleEntregaOnline/app/views/controlles/application_controller.rb" method="GET">
- 		<p><p><p>
-		Usuario: <input type="text" id="usuario" name="usuario" />
-		Senha: <input type="password" id="senha" name="senha" />
-                
-		<input type= "submit" value="Acessar" />
-	</form>
-
-	<form action="06-resultado.html" method="GET">
- 		<p><p><p>
-		Ainda nao e cadastrado?                
-		<input type= "submit" value="Cadastre-se" />
-	</form>
-</div>
+<%= form_tag login_path do %>
+  <div class="field">
+    <%= label_tag :username %>
+    <%= text_field_tag :username, params[:username] %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "login" %></div>
+<% end %></div>
 

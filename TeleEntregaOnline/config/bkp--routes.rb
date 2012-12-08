@@ -1,14 +1,5 @@
 TeleEntregaOnline::Application.routes.draw do
-
-  get "pedido" => "pedido#index", :as => "pedido" 
-
-  get "login" => "login#create", :as => "login"
-  get "logout" => "login#destroy", :as => "logout"
-  #get "signup" => "users#new", :as => "signup"
-
-  resources :login, :only => [:create]
-
-
+  get "login/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -22,7 +13,8 @@ TeleEntregaOnline::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  # resources :login_controller
+# 
 
   # Sample resource route with options:
   #   resources :products do
@@ -60,6 +52,7 @@ TeleEntregaOnline::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'login#index'
+  #root :to => 'login#verifica'
 
   # See how all your routes lay out with "rake routes"
 

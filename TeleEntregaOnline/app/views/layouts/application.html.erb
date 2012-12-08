@@ -26,6 +26,15 @@
 </nav> 
   
 <div class="rest_page">
+<div style="float:right; margin-right:20px">
+	<% flash.each do |name, msg| %>
+  	<%= content_tag :div, msg, :id => "flash#{name}" %>
+	<% end %>
+	<% if session[:user_id] %>
+  	<%= link_to 'Logout', logout_path %>
+	<% end %>
+ </div>
+
 	<div class="picture_panel">
 		      
 		<div class="home_icons">
@@ -48,6 +57,8 @@
 
 
 </body>
+
+
 <%= yield%>
 
 
