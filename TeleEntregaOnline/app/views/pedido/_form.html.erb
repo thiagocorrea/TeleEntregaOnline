@@ -1,0 +1,35 @@
+<div id="layout_login">
+<center><h1>Novo Pedido</h1></center>
+<%= form_for(@purchase) do |f| %>
+  <% if @purchase.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@purchase.errors.count, "error") %>Este pedido nao pode ser salvo!</h2>
+
+      <ul>
+      <% @purchase.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field" style="margin-left:5px;">
+	<%= f.label :Produto %>
+	<%= f.select :products, [['Selecione', 0],['Produto_1', 1], ['Produto_2', 2], ['Produto_3', 3]]%>
+  </div>
+
+  <div class="field" style="margin-left:5px;">
+  </div>
+  
+  <div class="field" style="margin-left:5px;">
+  </div>
+
+  <div class="field" style="margin-left:5px;">
+  </div>
+
+  <div class="actions" style="float:left">
+	<%= f.submit %>
+  </div>
+ 
+<% end %>
+</div>§

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id_produto: 
+  descricao: MyText
+  tipo_produto: false
+  preco: 1.5
+  observacao: MyText
+
+two:
+  id_produto: 
+  descricao: MyText
+  tipo_produto: false
+  preco: 1.5
+  observacao: MyText

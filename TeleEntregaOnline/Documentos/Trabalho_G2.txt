@@ -1,0 +1,27 @@
+
+  Notificações Importantes:
+  
+  - O trabalho terá como cenário um sistema para solicitação de tele-entrega, nota-se que o foco inicial está na solicitação 
+  e atendimento de tele-entrega do pedido que poderá conter 1 ou mais itens;
+  - A base de dados será criada no mysql;
+  - O nome do Projeto será TeleEntregaOnline. O mesmo nome do repositório no http://github.com;
+  - A estrutura do projeto já esta disponível para baixar no endereço: https://github.com/thiagocorrea/TeleEntregaOnline;
+  
+  A definir:
+  - Entidades, relacionamentos e propriedades de cada objeto;
+  - Após definir as entidades pensarmos no layout das telas iniciais; tela pedido, tela de consulta de produtos disponíveis e cadastros;
+  - Gerarmos as estimativas e elaborarmos um cronograma, se tivermos tempo pensaremos em login e outros itens que surgirão;
+  
+   Aguardo retorno de vocês, pois acredito que não podemos ficar mais de uma semana na análise do sistema a ser implementado, penso em
+  gerar casos de uso para consiguirmos desenvolver sem dificuldades, bem como para os testes.
+  
+   Importante fazermos uma análise bem definida para não perdermos tempo durante o desenvolvimento com dúvidas.
+   
+   Também precisamos gerar um cronograma e dividir as atividades entre os membros do grupo. E fazermos acompanhamento semanal para evitarmos 
+  atrasos no cronograma uma vez que temos apenas 5 semanas para entregar a solução que VALE 10 na G2.
+
+   Penso em definirmos a análise técnica do sistema, entidades, telas até dia 08/11/2012 e elaborarmos cronograna na sequencia.
+   
+   Att.;
+   Thiago Corrêa   (02/11/2012)
+  

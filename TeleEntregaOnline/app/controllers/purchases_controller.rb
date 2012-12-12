@@ -1,0 +1,25 @@
+class PurchasesController < ApplicationController
+	  def index
+	@purchase = Purchase.new
+	
+	respond_to do |format|
+	  format.html # index.html.erb
+          format.json { render :json => @purchase }
+	end
+  end
+  
+  def create
+     @purchase = Purchase.new(params[:purchase])
+
+     respond_to do |format|
+     if @purchase.save
+          format.html { redirect_to @purchase, :notice => "Pedido gerado com sucesso!" }
+          format.json { render :json => @purchase, :status => :created, :location => @purchase }
+     else
+          format.html { render :action => "index" }
+          format.json { render :json => @purchase.erros, :status => :improcessable_entity } 
+     end
+     end
+  end
+
+end

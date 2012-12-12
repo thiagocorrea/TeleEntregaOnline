@@ -1,0 +1,7 @@
+class User < ActiveRecord::Base
+  attr_accessible :id_usuario, :password, :username
+
+  validates :id_usuario, :username, :password, :presence => true, :message => "Preenchimento obrigatorio"
+  validates :username, :length => { :in => 6 .. 15 }
+  validates :password, :length => { :in => 6 .. 10 }
+end

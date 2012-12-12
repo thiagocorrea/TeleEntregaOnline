@@ -1,6 +1,7 @@
 TeleEntregaOnline::Application.routes.draw do
 
-  get "pedido" => "pedido#index", :as => "pedido" 
+  get "pedido" => "purchases#index", :as => "pedido" 
+  get "pedidoNew" => "purchases#create", :as => "pedidoNew"
 
   get "login" => "login#create", :as => "login"
   get "logout" => "login#destroy", :as => "logout"
@@ -8,7 +9,9 @@ TeleEntregaOnline::Application.routes.draw do
 
   resources :login, :only => [:create]
 
-
+  resources :purchases do
+      resources :products
+  end 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

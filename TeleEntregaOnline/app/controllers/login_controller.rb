@@ -10,7 +10,7 @@ class LoginController < ApplicationController
       session[:user_id] = user.id
 
  respond_to do |format|
-      format.html { redirect_to pedido_url }
+      format.html { redirect_to purchases_url }
       format.json { head :no_content }
     end
 

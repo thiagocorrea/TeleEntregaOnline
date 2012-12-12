@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TeleEntregaOnline</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>  
+  <link rel="stylesheet" href="/home/aluno/Projeto_TeleEntrega/TeleEntregaOnline/app/assets/stylesheets/style.css">
+  <link rel="stylesheet" href="/home/aluno/Projeto_TeleEntrega/TeleEntregaOnline/app/assets/stylesheets/style_login.css">
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="top">
+<img src="http://re.i.uol.com.br/receitas/2011/10/26/hot-dog-cachorro-quente-salsicha-1319621477297_956x500.jpg" width="50" height="20" alt=""/> Tele Entrega Online
+</nav>
+
+
+<nav class="topbar">
+        <ul>
+		<a href="#"><li>Home</li></a>
+		<a href="#"><li>Cardapio</li></a>
+		<a href="#"><li>Status do Pedido</li></a> 
+		<a href="#"><li>Lojas</li></a>
+	</ul>
+</nav> 
+  
+<div class="rest_page">
+<div style="float:right">
+	<% flash.each do |name, msg| %>
+  	<%= content_tag :div, msg, :id => "flash#{name}" %>
+	<% end %>
+	<% if session[:user_id] %>
+  	<%= link_to 'Logout', logout_path %>
+	<% end %>
+ </div>
+
+	<div class="picture_panel">
+		      
+		<div class="home_icons">
+			<div class="icon_column">
+<br><img src="http://2.bp.blogspot.com/-H-3nX_LfcKA/UCHAzjTAJmI/AAAAAAAABuo/jAUepMNQsR8/s1600/Novo%2Blanche%2BBurger%2BKing%252C%2Bo%2BBK%2BPicanha.jpg" width="320" height="200" alt=""/>
+<br><img src="http://imgur.com/F6CmD.jpg" width="320" height="200" alt=""/>			 		
+	
+		<div class="headlines">
+                  
+		
+</div><!-- END headlines 1 -->
+
+</div><!-- END icon_column 1 -->          
+<footer>
+	<nav>
+		<ul>
+		</ul>
+	</nav>
+</footer>
+
+
+</body>
+
+
+<%= yield%>
+
+
+
+
+</html>

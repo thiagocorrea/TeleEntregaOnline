@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id_usuario: 
+  id_pedido: 
+  data_pedido: 2012-11-08 01:11:45
+  id_status: 
+  valor_entrega: 1.5
+  valor_produtos: 1.5
+  valor_total: 1.5
+  tempo_estimado: 2012-11-08 01:11:45
+
+two:
+  id_usuario: 
+  id_pedido: 
+  data_pedido: 2012-11-08 01:11:45
+  id_status: 
+  valor_entrega: 1.5
+  valor_produtos: 1.5
+  valor_total: 1.5
+  tempo_estimado: 2012-11-08 01:11:45
