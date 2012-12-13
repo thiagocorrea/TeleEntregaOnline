@@ -1,5 +1,8 @@
 TeleEntregaOnline::Application.routes.draw do
+  
 
+
+  get "users" => "users#index", :as => "users"
   get "pedido" => "purchases#index", :as => "pedido" 
   get "pedidoNew" => "purchases#create", :as => "pedidoNew"
 
@@ -8,6 +11,8 @@ TeleEntregaOnline::Application.routes.draw do
   #get "signup" => "users#new", :as => "signup"
 
   resources :login, :only => [:create]
+ 
+  resources :users
 
   resources :purchases do
       resources :products

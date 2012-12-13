@@ -1,21 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  id_produto: 1
+  id_produto: 10
   descricao: Produto_1
   tipo_produto: false
   preco: 1.5
   observacao: MyText
 
 two:
-  id_produto: 2
+  id_produto: 20
   descricao: Produto_2
   tipo_produto: false
   preco: 1.5
   observacao: MyText
 
 three:
-  id_produto: 3
+  id_produto: 30
   descricao: Produto_3
   tipo_produto: false
   preco: 1.5

@@ -1,0 +1,34 @@
+class UsersController < ApplicationController
+    def index
+	@user = User.new
+	
+	respond_to do |format|
+	  format.html # index.html.erb
+          format.json { render :json => @user }
+         end
+   end
+
+   def create
+     @user = User.new(params[:user])
+
+     respond_to do |format|
+     if @user.save
+          format.html { redirect_to @user, :notice => "Usuario cadastrado com sucesso!" }
+          format.json { render :json => @user, :status => :created, :location => @user }
+     else
+          format.html { render :action => "index", :notice => "Erro" }
+          format.json { render :json => @user.errors, :status => :improcessable_entity } 
+     end
+     end
+  end
+
+ def show
+     @user = User.find(params[:id])
+
+     respond_to do |format|
+          format.html 
+          format.json { render :json => @user }
+     end
+  end
+
+end

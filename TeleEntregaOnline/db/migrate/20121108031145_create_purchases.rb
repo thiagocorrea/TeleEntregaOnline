@@ -3,6 +3,7 @@ class CreatePurchases < ActiveRecord::Migration
     create_table :purchases do |t|
       t.integer :id_usuario
       t.integer :id_pedido
+      t.text :produto
       t.datetime :data_pedido
       t.integer :id_status
       t.float :valor_entrega

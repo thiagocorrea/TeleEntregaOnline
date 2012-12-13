@@ -1,0 +1,8 @@
+
+<div id="layout_login">
+ <p id="notice"><%= notice %></p>
+</div>
+
+	
+
+

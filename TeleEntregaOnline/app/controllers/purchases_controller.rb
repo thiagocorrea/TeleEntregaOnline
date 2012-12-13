@@ -13,12 +13,21 @@ class PurchasesController < ApplicationController
 
      respond_to do |format|
      if @purchase.save
-          format.html { redirect_to @purchase, :notice => "Pedido gerado com sucesso!" }
+          format.html { redirect_to @purchase, :notice => "Pedido efetuado com sucesso!" }
           format.json { render :json => @purchase, :status => :created, :location => @purchase }
      else
-          format.html { render :action => "index" }
-          format.json { render :json => @purchase.erros, :status => :improcessable_entity } 
+          format.html { render :action => "index", :notice => "Erro" }
+          format.json { render :json => @purchase.errors, :status => :improcessable_entity } 
      end
+     end
+  end
+
+ def show
+     @purchase = Purchase.find(params[:id])
+
+     respond_to do |format|
+          format.html 
+          format.json { render :json => @purchase }
      end
   end
 
