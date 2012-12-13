@@ -19,14 +19,13 @@
 <nav class="topbar">
         <ul>
 		<a href="#"><li>Home</li></a>
-		<a href="#"><li>Cardapio</li></a>
-		<a href="#"><li>Status do Pedido</li></a> 
+		<a href="#"><li>Cardapio</li></a>	
 		<a href="#"><li>Lojas</li></a>
 	</ul>
 </nav> 
   
 <div class="rest_page">
-<div style="float:right">
+<div style="float:right; margin-right:20px">
 	<% flash.each do |name, msg| %>
   	<%= content_tag :div, msg, :id => "flash#{name}" %>
 	<% end %>
